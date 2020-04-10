@@ -1,0 +1,20 @@
+<footer class="footer">
+  <ul class="footer__list">
+    {% for item in site.data.footernav %}
+    <li class="footer__list__item">
+      <a class="base-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <!-- footer__inner__nav -->
+  <div class="footer__copyright">
+    {% if (site.twitter) %}
+    &copy;<a href="https://twitter.com/{{ site.twitter }}">{{ site.twitter }}</a>
+    {% elsif (site.github) %}
+    &copy;<a href="https://github.com/{{ site.github }}">{{ site.github }}</a>
+    {% else %}
+    &copy;{{ site.admin }}
+    {% endif %}
+  </div>
+  <!-- footer__copyright -->
+</footer>

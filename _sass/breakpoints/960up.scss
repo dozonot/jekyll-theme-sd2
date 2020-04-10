@@ -1,0 +1,41 @@
+.content {
+  justify-content: space-between;
+  flex-direction: row;
+  &__top {
+    flex: 1;
+  }
+
+  &__main {
+    flex: 1;
+    margin-right: 2%;
+  }
+
+  &__sidebar {
+    flex-basis: 260px;
+  }
+}
+
+.swiper-container {
+  width: 900px;
+  height: 600px;
+}
+
+.swiper-slide {
+
+  &__title {
+    width: calc(100% - 33px);
+    font-size: 32px;
+    padding: 15px;
+  }
+}
+
+.footer {
+  &__list {
+    flex-direction: row;
+      justify-content: center;
+
+    &__item {
+      padding: 0 15px;
+    }
+  }
+}

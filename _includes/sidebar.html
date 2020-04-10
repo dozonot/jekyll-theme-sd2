@@ -1,0 +1,8 @@
+<aside class="content__sidebar">
+  <h2>最新記事</h2>
+  {% assign related_posts = site.posts | slice: 0, 3 %}
+  {% for post in related_posts %}
+  <h3 class="content__sidebar__title"><a class="base-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+  {{ post.excerpt | slice: 0, 100 | strip }}
+  {% endfor %}
+</aside>
