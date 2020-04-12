@@ -136,3 +136,10 @@ img {
   }
 
 }
+
+.highlight pre code {
+  white-space: pre;
+  overflow: scroll;
+  display: inline-block;
+  width: 100%;
+}
